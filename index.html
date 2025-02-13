@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Pink Envelope</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="valentines">
-            <div class="envelope">
-                <div class="card">
-                    <div class="text">
-                        Happy <br> Valentines's <br> Day
-                    </div>
-                    <div class="heart"></div>
+    <div class="envlope-wrapper">
+        <div id="envelope" class="close">
+            <div class="wax-seal"></div>
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="letter-corner corner-tl"></div>
+                <div class="letter-corner corner-br"></div>
+                <div class="message">
+                    <p>Happy Valentine</p>
+                    <p>My World</p>
                 </div>
             </div>
-            <div class="front"></div>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+            <div class="sparkles">
+                <div class="sparkle s1"></div>
+                <div class="sparkle s2"></div>
+                <div class="sparkle s3"></div>
+            </div>
         </div>
     </div>
-</body>
+    <div class="reset">
+        <button id="open">Open Envelope</button>
+        <button id="reset">Close Envelope</button>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/main.js"></script>
+</body>
 </html>
